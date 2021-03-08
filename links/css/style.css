@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: #131111;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(2%,#131111),color-stop(108%,#444141));
+    background-image: linear-gradient(#131111 2%,#444141 108%);
+    color: #ffffe5;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 20px;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+a {
+    display: block;
+    max-width: 400px;
+    padding: 20px 25px;
+    margin: 0 auto 20px auto;
+    color: #ffffe5;
+    border: 2px solid #ffffe5;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 200ms ease-in-out;
+    
+}
+
+.featured {
+    background-color: #ffffe5;
+    color: #131111;
+    font-weight: bold;
+    position: relative;
+
+}
+
+a.featured::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #131111;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    
+}
+
+a.featured:hover, a:hover{
+    background-color: #131111;
+    color: #ffffe5;
+
+    
+}
+
+
+
+.paylinks, .socials {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.paylinks a, .socials a {
+    flex: 1;
+    padding: 15px 20px;
+    margin-right: 10px;
+}
+
+.paylinks a:last-child, .socials a:last-child{
+    margin-right: 0px;
+}
